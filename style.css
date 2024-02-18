@@ -439,10 +439,25 @@ footer .questions{
     .button{
         margin-top: 15px;
     }
+    .faq .faq-div{
+        font-size: 1.2rem;
+    }
+    .faq .faq-div span{
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 390px){
     .main nav{
         padding: 24px 12px;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .faq .faq-div{
+        font-size: 1rem;
+    }
+    .faq .faq-div span{
+        font-size: 40px;
     }
 }
