@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+body, html{
+    background-color: black;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.main .box{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.70;
+    position: absolute;
+    top: 0;
+}
+
+.main nav{
+    display: flex;
+    width: 82.29vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+}
+
+.main nav img{
+    width: 9.25rem;
+    height: 2.5rem;
+    color: red;
+    position: relative;
+    z-index: 1;
+}
+
+.main nav{
+    position: relative;
+    z-index: 1;
+}
+
+.main-content-wrapper{
+    width: 100%;
+    height: 66%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.main-content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+.main-content .inputLabel{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.input-wrapper{
+    width: 600px;
+    display: flex;
+    margin: 20px 0;
+}
+
+input{
+    line-height: 1.5;
+    font-size: 1rem;
+    width: 300px;
+    margin: 0 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 14px 15px;
+    background-color: rgba(23, 23, 28,0.5);
+    color: rgba(255, 255, 255, 0.7);
+    outline: none;
+    flex: 1;
+}
+
+.button{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 12.5rem;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+
+.main-content button:hover{
+    background-color: rgb(193, 17, 25);
+}
+
+.main-content button img{
+    width: 1.5rem;
+    height: inherit;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0rem;
+}
+
+.separation{
+    width: 100%;
+    height: 0.5rem;
+    position: relative;
+    background-color: rgb(35,35,35);
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 88px;
+    min-height: 2rem;
+    color: rgb(255,255,255);
+    background: transparent;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid rgb(255,255,255);
+    cursor: pointer;
+    padding: 5px 0 5px 10px;
+    border-left: none;
+}
+
+nav .header-buttons img{
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgb(255,255,255);
+    padding: 7.5px;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+    position: relative;
+    left: 12px;
+}
+
+.btn-sm {
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 700;
+    min-height: 2rem;
+    padding: 0.45rem 1rem;
+    margin-left: 24px;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.btn-sm:hover {
+    background: rgb(193,17,25);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 72px;
+    gap: 20px;
+    margin: 0 150px;
+}
+
+.first h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.first p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+.section-img {
+    position: relative;
+}
+
+.section-img img{
+    width: 500px;
+    position: relative;
+    top: 1rem;
+    z-index: 1;
+}
+
+.section-img video{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 68px;
+    width: 400px;
+    height: 395px;
+}
+
+@media screen and (max-width: 1278px) {
+    .first{
+        margin: 0 30px;
+    }
+    .main nav{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 998px) {
+    .first{
+        flex-wrap: wrap;
+    }
+    .first h2{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .first p{
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .first .section-content{
+        padding-top: 20px;
+    }
+    .main-content h1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .main-content p, .main-content .inputLabel{
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+    .main nav img{
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+    nav .header-buttons img{
+        padding: 7.5px;
+        width: 16px;
+        height: 16px;
+    }
+    .btn-sm{
+        margin-left: 8px;
+    }
+}
+
+
+.second .boxshot{
+    width: 17.5rem;
+    background-color: black;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    bottom: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second .boxshot .stranger-things{
+    font-size: 1rem;
+}
+
+.second .boxshot .downloading{
+    font-size: 0.875rem;
+    color: #0071eb;
+}
+
+.second .boxshot .gif{
+    background: url("assets/images/gif.gif") center center no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.second .boxshot img{
+    width: 57px;
+    height: 80px;
+    left: 10px;
+    top: 0;
+    padding: 5px 0;
+}
+
+.third .section-img video{
+    position: absolute;
+    top: -48px;
+    left: 81px;
+    width: 318px;
+    height: 395px;
+}
+
+.faq{
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 900;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq h2{
+    margin-bottom: 20px;
+}
+
+.faq .faq-div{
+    width: 80%;
+    height: 84px;
+    background-color: #2d2d2d;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.50rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.faq .faq-div:hover{
+    background-color: #414141;
+    transition: 0.05s ease-in;
+}
+
+.faq .faq-div span{
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.faqInput{
+    margin: 20px auto 50px;
+}
+
+.faqInputLabel{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+footer{
+    color: rgba(255,255,255,0.7);
+    margin: 60px auto;
+    max-width: 70.5vw;
+}
+
+footer .questions{
+    margin: 20px 0;
+}
+
+.linksWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.links a{
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 542px) {
+    .section-img img{
+        width: 300px;
+    }
+    .section-img video{
+        width: 229px;
+        height: 379px;
+        top: -62px;
+        left: 40px;
+    }
+    .third .section-img video{
+        width: 200px;
+        top: -105px;
+        left: 48px;
+    }
+    .second .boxshot{
+        left: 15px;
+        width: 16rem;
+        bottom: -4%;
+    }
+    .second .boxshot img{
+        width: 34px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .input-wrapper{
+        flex-direction: column;
+        align-items: center;
+        width: 310px;
+    }
+    input{
+        width: 100%;
+    }
+    .button{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .main nav{
+        padding: 24px 12px;
+    }
+}
